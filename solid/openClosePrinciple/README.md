@@ -1,0 +1,1 @@
+The main problem in this case is that some information is duplicated.
