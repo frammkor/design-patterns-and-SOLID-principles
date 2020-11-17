@@ -1,15 +1,17 @@
-
+# Builder
 ## When to use it?
 
 They can be use when:
 - You have a complex process to construct an object involving multiple steps.
-- In builder we remove the logic related to object construction from 'client' code & abstract it in separate classes.
+- You have a complex 'constructor'.
 
-## What problem builder design pattern solves?
+In builder we remove the logic related to object construction from 'client' code & abstract it in separate classes.
+
+## What problem solves?
 
 ### 1 - A Class constructor that requires a lot of information
 
-`
+```java
 // Product instances are immutable
 class Product {
 
@@ -19,7 +21,7 @@ class Product {
 
     }
 }
-`
+```
 
 When writing immutable classes we often end up with classes that receives multiple parameters because are needed in the constructor or the object. Having a method or a constructor that needs multiple parameters is considered a bad practice.
 Why? Because anyone using that code need to know what those parameters means and in witch other should be passed. Things get even worse when the parameters share data types.
@@ -30,7 +32,7 @@ This patter helps in two ways:
 
 ### 2 - Objects that need other objects or 'parts' to construct them
 
-`
+```java
 class Address {
     public Address (String houseNumber, String, street, ...) {
         // initialize
@@ -44,8 +46,9 @@ class User {
 
     // other code
 }
+```
 
-## Implement a Builder
+## Implementing
 
 Refer to 'builder-01.png'
 1. We start by creating a builder
@@ -54,11 +57,17 @@ Refer to 'builder-01.png'
     3. It must provide a way/method to get fully built object out. Optionally builder can keep reference to a product it has built so the same can be returned again in the future (CONCRETE BUILDER)
 2. A director can be separate class or client can play the rol of director. Rarely implemented as a separate class.
 
-### Considerations
+## Considerations
 
-#### Implementation Considerations
+### Implementation Considerations
 An immutable class can be easily created by implementing builder as an inner static class (see builder 2 on the example). This type of implementation is used frequently even if immutability is not a main concern.
 
-#### Design Considerations
+### Design Considerations
 - The director role is rarely implemented as separate class, typically the consumer of the object instance or the client handles that role.
 - "Abstract builder" is also not required if "product" itself is not part of any inheritance hierarchy. You can directly create a  "concrete builder".
+
+## Pitfalls
+
+- It can be complex for new comers, mainly because of 'method chaining', where builder methods return the builder object itself.
+
+- The possibility of partially initialized object. It is possible that a developer sets one or non of properties using the 'withXxxx' methods and then call build(). If required properties are missing, build method should provide suitable defaults or throw exception.
