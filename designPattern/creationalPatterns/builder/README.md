@@ -50,12 +50,16 @@ class User {
 
 ## Implementing
 
-Refer to 'builder-01.png'
+![builderUml](./builder-01.png)
+
+Refer to the UML 'builder-01.png'
 1. We start by creating a builder
     1. Identify the 'parts' of the product and provide methods ot create those parts
     2. It should provide a method to "assemble" or build the product/object (BUILDER)
     3. It must provide a way/method to get fully built object out. Optionally builder can keep reference to a product it has built so the same can be returned again in the future (CONCRETE BUILDER)
 2. A director can be separate class or client can play the rol of director. Rarely implemented as a separate class.
+
+![builderUmlExample](./builder-02.png)
 
 ## Considerations
 
