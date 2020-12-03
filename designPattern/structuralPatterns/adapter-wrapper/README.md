@@ -2,7 +2,7 @@
 
 ## When to use it?
 
-Wen there is an existing object which provides the functionality that client needs. But client code can not use it because is expecting an object with a different interface. The Adapter design will shape the object to the client's expected interface.
+When there is an existing object which provides the functionality that client needs. But client code can not use it because is expecting an object with a different interface. The Adapter design will shape the object to the client's expected interface.
 
 ## Implementing
 
