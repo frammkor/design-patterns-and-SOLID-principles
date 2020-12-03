@@ -3,10 +3,6 @@
 Implementations & abstractions are generally coupled to each other in normal inheritance. Using bridge pattern can decouple them so they can both change without affecting each other.
 This is achieve by creating two separate inheritance hierarchies; one for implementation and other for abstraction.
 
-## When to use it?
-
-
-
 ## Implementing
 
 ![bridgeUml](./bridge-01.png)
@@ -35,8 +31,6 @@ This is achieve by creating two separate inheritance hierarchies; one for implem
 - By using abstract factory pattern to create abstraction object with correct implementation you can de-couple concrete implementors from abstraction.
 
 ## Adapter vs Bridge 
-
-
 
 #### Adapter:
 
