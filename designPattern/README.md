@@ -36,3 +36,20 @@ Composition and Inheritance can be combined to create arrangements to solve comm
 - Proxy
 
 ## Behavioral 
+
+Behavioral patterns describe how classes and objects interact & communicate with each other.
+
+### Behavioral Patterns that will be studied
+
+- Chain of Responsibility
+- Command
+- Interpreter
+- Mediator
+- Iterator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
+- Null Object
