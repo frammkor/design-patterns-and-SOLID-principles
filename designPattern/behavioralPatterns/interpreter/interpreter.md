@@ -62,5 +62,5 @@ Client call the interpreter and can optionally build the syntax tree.
 ## Pitfalls
 
 - A class per rule can quickly result in large number of classes, even for moderately complex grammar.
-- Not really suitable for languages with comples grammar rules.
+- Not really suitable for languages with complex grammar rules.
 - This design pattern is very specific to a particular kind of problem of interpreting language.
