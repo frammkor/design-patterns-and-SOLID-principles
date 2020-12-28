@@ -2,7 +2,7 @@
 
 Use for a very specific problem.
 
-## When to use it?
+## Which problem it solves?
 
 There is a need to process a simple 'language' with rules or grammar.
     e.g. File access requires user role and admin role.
