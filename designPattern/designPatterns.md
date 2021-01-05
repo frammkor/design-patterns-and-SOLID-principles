@@ -5,7 +5,7 @@ They can be classified in 3 groups.
 - Structural: this ones deal with how classes and objects are arranged or composed so to derive functionality out of them.
 - Behavioral: this ones describe how classes and objects interact & communicate with each other
 
-## Creational?
+## Creational
 
 Sometime there are additional requirements or a process needs to take place for create an object.
 Examples: And object needs other objects before it can be created. Or multiple steps needed before create an object (query url for data, or read data from a file).
