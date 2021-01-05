@@ -1,6 +1,5 @@
 # Mediator
 
-
 ## Which problem it solves?
 
 Helps to remove the complexity in object interaction / collaboration.
@@ -11,7 +10,7 @@ The benefit of this arrangement is that the interaction can now change without n
 
 ## How does it solve it?
 
-Mediator encapsulates how a set of objects interact with each other in a single object. Due to this encapsulation there isa loose coupling between the interacting objects.
+Mediator encapsulates how a set of objects interact with each other in a single object. Due to this encapsulation there is a loose coupling between the interacting objects.
 
 Typically an object explicitly knows about other object to which it wants to interact (i.e. to calla method). In Mediator Pattern, this interaction is within the mediator object & interacting objects only know about the mediator object.
 
